@@ -11,13 +11,20 @@
         href: http://192.168.1.138:3001/
         description: Uptime Monitoring
         icon: mdi-bell
+        ping: http://192.168.1.138:3001/
+        container: uptime-kuma
+        widget:
+            type: uptimekuma
+            url: http://192.168.1.138:3001/
+            slug: SLUG
 
-- My Second Group:
-    - My Second Service:
-        href: http://localhost/
-        description: Homepage is the best
-
-- My Third Group:
-    - My Third Service:
-        href: http://localhost/
-        description: Homepage is 😎
+- Information:
+    - Speedtest Tracker:
+        icon: mdi-speedometer
+        href: http://192.168.1.138/
+        description: Speed Test
+        ping: http://192.168.1.138/
+        container: Speed Test
+        widget:
+            type: speedtest
+            url: http://192.168.1.138/

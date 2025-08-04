@@ -6,9 +6,9 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=Etc/UTC
-      - APP_KEY=
-      - APP_URL=
+      - TZ=America/Chicago
+      - APP_KEY=base64:rNzfycOuamwEZi6vfK7iRr2Yws3mSFdcS0M9zDYdDg4=
+      - APP_URL=localhost:80
       - DB_CONNECTION=sqlite
       - SPEEDTEST_SCHEDULE=
       - SPEEDTEST_SERVERS=
@@ -17,10 +17,12 @@ services:
       - DB_DATABASE= #optional
       - DB_USERNAME= #optional
       - DB_PASSWORD= #optional
-      - DISPLAY_TIMEZONE=Etc/UTC #optional
+      - DISPLAY_TIMEZONE=America/Chicago #optional
       - PRUNE_RESULTS_OLDER_THAN=0 #optional
+      - SPEEDTEST_SCHEDULE="30 * * * *"
+      - SPEEDTEST_SERVER=63775
     volumes:
-      - /path/to/speedtest-tracker/data:/config
+      - ./config:/config
     ports:
       - 80:80
     restart: unless-stopped

@@ -1,3 +1,9 @@
 # Ignore Log Files
 logs/
 *.log
+
+# Uptime Kuma
+data/
+
+# Speedtest Tracker
+*.sqlite

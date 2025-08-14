@@ -10,3 +10,9 @@
 - search:
     provider: duckduckgo
     target: _blank
+
+- openmeteo:
+    label: Current
+    latitude: 29.529
+    longitude: -95.201
+    cache: 5

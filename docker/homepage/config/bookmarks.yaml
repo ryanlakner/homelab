@@ -6,6 +6,12 @@
     - Github:
         - abbr: GH
           href: https://github.com/
+    - AWS:
+        - abbr: AW
+          href: https://console.aws.amazon.com/
+    - Azure:
+        - abbr: AZ
+          href: https://portal.azure.com/
 
 - Social:
     - Reddit:

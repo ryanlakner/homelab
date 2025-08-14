@@ -7,24 +7,25 @@
         href: http://192.168.1.106:8006/
         description: Virtual Environment
         icon: mdi-server
+        ping: http://192.168.1.106:8006/
     - Uptime Kuma:
-        href: http://192.168.1.138:3001/
+        href: http://192.168.1.146:3001/
         description: Uptime Monitoring
         icon: mdi-bell
-        ping: http://192.168.1.138:3001/
+        ping: http://192.168.1.146:3001/
         container: uptime-kuma
         widget:
             type: uptimekuma
-            url: http://192.168.1.138:3001/
+            url: http://192.168.1.146:3001/
             slug: SLUG
 
 - Information:
     - Speedtest Tracker:
         icon: mdi-speedometer
-        href: http://192.168.1.138/
+        href: http://192.168.1.146/
         description: Speed Test
-        ping: http://192.168.1.138/
-        container: Speed Test
+        ping: http://192.168.1.146/
+        container: speedtest-tracker
         widget:
-            type: speedtest
-            url: http://192.168.1.138/
+          type: speedtest
+          url: http://192.168.1.146/
